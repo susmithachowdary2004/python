@@ -1,0 +1,12 @@
+a="CSE"
+b=a.upper()
+print(b)
+a="Cse"
+b=a.capitalize()
+print(b)
+a="CSE"
+b=a.swapcase()
+print(b)
+a="CSE is good dept"
+b=a.title()
+print(b)

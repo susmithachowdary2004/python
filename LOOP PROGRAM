@@ -1,0 +1,6 @@
+for i in "for":
+  c = 2  
+  for j in range(5):
+     print("hai",end=" ")
+     c = c + 2
+  print(c)

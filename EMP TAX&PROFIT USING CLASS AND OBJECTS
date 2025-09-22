@@ -1,0 +1,40 @@
+class cog:
+    comp_name="ets"
+    profit=50000000
+    tax_per=10
+    
+    def __init__(self,a,b,c):
+        self.name=a
+        self.salary=b
+        self.share_per=c
+        self.tax_pay=0
+        self.share_amount=0
+        
+    def cla_tax(self):
+        self.tax_pay=(self.salary*self.tax_per)/100
+            
+    def cal_share(self):
+        self.share_amount=(self.profit*self.share_per)/100
+        
+    def display(self):
+        print("NAME is:",self.name)
+        print("SALARY is:",self.salary)
+        print("SHARE PERCENTAGE IS:",self.share_per)
+        self.cla_tax()
+        self.cal_share()
+        print("TAX PAYING IS:",self.tax_pay)
+        print("SHARE PERCENTAGE IS :",self.share_amount)
+        
+n=int(input("Enter no of employee:"))
+
+emp=[]
+for i in range(n):
+    a=input("ENTER NAME:")
+    b=int(input("ENTER SALARY:"))
+    c=int(input("ENTER PERCENTAGE:"))
+    r=cog(a,b,c)
+    emp.append(r)
+
+for i in emp:
+    i.display()
+    print("------------------------")

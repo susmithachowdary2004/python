@@ -1,0 +1,28 @@
+class CSE:
+    def set_dim(self,name,m1,m2,m3):
+        self.name=name
+        self.m1=m1
+        self.m2=m2
+        self.m3=m3
+    def cal_per(self):
+        total=self.m1+self.m2+self.m3
+        return total//3
+    
+n=int(input("enter the number of students:"))
+students=[]
+index=1
+for i in range(n):
+    S=CSE()
+    name=input("enter student name:{}".format(index))
+    m1=int(input("enter mark1 of student{}:".format(index)))
+    m2=int(input("enter mark2 of student{}:".format(index)))
+    m3=int(input("enter mark3 of student{}:".format(index)))
+    S.set_dim(name,m1,m2,m3)
+    students.append(S)
+    index=index+1
+
+index=1
+for i in students:
+    print("the student name is:",i.name)
+    print("the percentage is:",i.cal_per())
+    index=index+1

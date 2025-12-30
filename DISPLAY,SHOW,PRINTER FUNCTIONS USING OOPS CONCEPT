@@ -1,0 +1,15 @@
+class Susmitha:
+
+    name="siri"
+    def show(self):
+        print("Hello")
+    def display(self):
+        print(Susmitha.name)
+        self.x =int(input("enter any value:"))
+    def printer(self):
+        print(self.x)
+s1=Susmitha()
+s1.show()
+s1.display()
+s1.printer()
+

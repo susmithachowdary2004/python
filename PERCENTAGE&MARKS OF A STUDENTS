@@ -1,0 +1,17 @@
+class student:
+    def __init__ (self):
+          self.s1=int(input("Enter mark1: "))
+          self.s2=int(input("Enter mark2: "))
+          self.s3=int(input("Enter mark3: "))
+
+    def display(self):
+        print(self.s1+self.s2+self.s3//3)
+
+l=[]
+n=int(input("Enter num of students:"))
+for i in range(n):
+    x=student()
+    l.append(x)
+
+for i in range(n):
+    l[i].display()

@@ -1,0 +1,20 @@
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.left = None
+        self.right = None
+count = 0
+def preorder(node,depth = 0):
+    global count
+    if not node or count == 3 :
+        return
+    print(node.data,"Depth:",depth)
+    count += 1
+    preorder(node.left,depth + 1)
+    preorder(node.right,depth + 1)
+a=Node(10)
+b=Node(20)
+c=Node(15)
+a.left=b
+a.right=c
+preorder(a)

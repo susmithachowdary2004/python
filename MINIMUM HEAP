@@ -1,0 +1,11 @@
+import heapq
+min_heap=[]
+numbers=[10,23,22,40,55,76,88,30,99,50]
+for i in numbers:
+    heapq.heappush(min_heap,i)
+    print(min_heap)
+    heapq.heappop(min_heap)
+while(min_heap):
+        print(heapq.heappop(min_heap),end="")
+    
+

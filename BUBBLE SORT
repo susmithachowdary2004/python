@@ -1,0 +1,6 @@
+arr=[10,11,3,4,7,17,16]
+for i in range(6):
+    for j in range(7-i-1):
+        if(arr[j]>arr[j+1]):
+            arr[j],arr[j+1]=arr[j+1],arr[j]
+print(arr)

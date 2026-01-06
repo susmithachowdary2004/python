@@ -1,0 +1,10 @@
+import heapq
+max_heap=[]
+numbers=[10,23,22,40,55,76,88,30,99,50]
+for i in numbers:
+    heapq.heappush(max_heap,i)
+    print(max_heap)
+    heapq.heappop(max_heap) 
+    while(max_heap):
+         print(heapq.heappop(max_heap),end="")
+    
